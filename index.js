@@ -12,6 +12,8 @@ const bot = new TelegramBot(botToken, { polling: true });
 
 app.use(express.json())
 
+bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook",)
+
 app.post('/webhook', (req, res) => {
     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
     // قم بكتابة منطق المعالجة هنا
