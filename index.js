@@ -9,7 +9,16 @@ const express = require('express');
 const app = express();
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
 const bot = new TelegramBot(botToken, { polling: true });
+
 app.use(express.json())
+
+app.post('/webhook', (req, res) => {
+    const data = req.body; // البيانات التي تم إرسالها من الويب هوك
+    // قم بكتابة منطق المعالجة هنا
+    console.log("dddddddddddd");
+    const response = { message: 'Webhook received successfully' };
+    res.status(200).json(response);
+});
 
 bot.on("polling_error", console.log);
 const current = {
