@@ -2,6 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const fs = require("fs");
 const path = require('path');
 const { localDB } = require('./subjects');
+const bodyParser = require('body-parser');
 // replace the value below with the Telegram token you receive from @BotFather
 
 const express = require('express');
@@ -10,14 +11,15 @@ const app = express();
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
 const bot = new TelegramBot(botToken, { polling: true });
 
-app.use(express.json())
+app.use(bodyParser.json());
 
-bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook",)
+
 
 app.post('/webhook', (req, res) => {
     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
     // قم بكتابة منطق المعالجة هنا
-    console.log("dddddddddddd");
+    console.log(data);
+    bot.processUpdate(data)
     const response = { message: 'Webhook received successfully' };
     res.status(200).json(response);
 });
@@ -32,6 +34,8 @@ const current = {
     folder:"",
   },
 };
+
+bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook",)
 
 bot.on('message', (msg) => {
 
