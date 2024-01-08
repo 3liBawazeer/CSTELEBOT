@@ -24,7 +24,7 @@ app.post('/webhook'+botToken, (req, res) => {
     // bot.processUpdate(data)
    
     if (mesg) {
-      bot.sendMessage(chatId)
+      console.log(chatId,"this is message sending")
     }
     
     const response = { message: 'Webhook received successfully' };
