@@ -9,7 +9,7 @@ const express = require('express');
 
 
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
-const bot = new TelegramBot(botToken,{polling:false});
+const bot = new TelegramBot(botToken,{polling:false,filepath:false});
 
 bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
 
@@ -80,9 +80,10 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         } else {
           files.map( async file => {
             const filePath = path.join(folderPath, file);
+            const buffer = fs.readFileSync(filePath)
             console.log(filePath);
-            const res = await bot.sendDocument(chatId,filePath)
-            console.log(res);
+            // const res = await bot.sendDocument(chatId,filePath)
+            // console.log(res);
           });
         }
       });
