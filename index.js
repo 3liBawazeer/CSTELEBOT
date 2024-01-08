@@ -19,16 +19,8 @@ app.use(bodyParser.json());
 
 app.post('/webhook'+botToken, (req, res) => {
     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
-    const mesg = data.message , query = data.callback_query.data && JSON.parse(data.callback_query.data) ;
-    const chatId = data.callback_query.chat.id || data.message.chat.id
-    // bot.processUpdate(data)
-   
-    if (mesg) {
-      console.log(chatId,"this is message sending")
-    }
-    
-    const response = { message: 'Webhook received successfully' };
-    res.status(200).json(response);
+    bot.processUpdate(data)
+    res.sendStatus(200);
 });
 
 const port = process.env.PORT || 3000
@@ -50,8 +42,6 @@ const current = {
 
 
 bot.on('message', (msg) => {
-
-  
 
   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
   if (text == 'من عمك') {
@@ -90,7 +80,9 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         } else {
           files.map(file => {
             const filePath = path.join(folderPath, file);
-            bot.sendDocument(chatId,filePath,{caption:file,parse_mode:"MarkdownV2"},{filename:file})
+            bot.sendDocument(chatId,filePath).then((res)=>{
+              console.log(res,"file sended");
+            })
           });
         }
       });
