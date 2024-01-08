@@ -78,12 +78,12 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         if (files.length == 0) {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
-          files.map(file => {
+          files.map( async file => {
             const filePath = path.join(folderPath, file);
             const buffer = fs.readFileSync(filePath)
             console.log(buffer);
-            // const res = await bot.sendDocument(chatId,filePath)
-            // console.log(res);
+            const res = await bot.sendDocument(chatId,buffer)
+            console.log(res);
           });
         }
       });
