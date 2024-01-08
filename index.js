@@ -27,6 +27,7 @@ const port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log('Server is running ' + port);
+  bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
 });
 
 // bot.on("polling_error", console.log);
