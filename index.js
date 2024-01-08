@@ -70,7 +70,7 @@ bot.on('message', (msg) => {
 const sendbooks = (type = 0 || 1,chatId,data) => { 
     const folderPath = __dirname + "/computer scince/level_"+ data?.lv + "/term_" + data?.trm + "/" + data.fol + "/" + type;
     if (fs.existsSync(folderPath)) {
-        fs.readdir(folderPath, (err, files) => {
+        fs.readdir( folderPath,  (err, files) => {
         if (err) {
           console.error('حدث خطأ في قراءة محتوى المجلد:', err);
           return;
@@ -78,22 +78,11 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         if (files.length == 0) {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
-          files.map(file => {
+          files.map( async file => {
             const filePath = path.join(folderPath, file);
-            let contype ;
-             if (filePath.endsWith(".docx")) {
-              contype = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-             }else if (filePath.endsWith(".pdf")) {
-              contype = "application/pdf"
-             }else if (filePath.endsWith(".pptx")) {
-              contype = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
-             }
-            bot.sendMessage(chatId,"---wait---");
-            bot.sendDocument(chatId,filePath,{},{contentType:contype}).then((res)=>{
-              // bot.sendMessage(chatId,res.document.file_name,{
-              //   reply_to_message_id:res.message_id,
-              // })
-            })
+            console.log(filePath);
+            const res = await bot.sendDocument(chatId,filePath)
+            console.log(res);
           });
         }
       });
