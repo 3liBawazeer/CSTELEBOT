@@ -80,11 +80,19 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         } else {
           files.map(file => {
             const filePath = path.join(folderPath, file);
+            let contype ;
+             if (filePath.endsWith(".docx")) {
+              contype = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+             }else if (filePath.endsWith(".pdf")) {
+              contype = "application/pdf"
+             }else if (filePath.endsWith(".pptx")) {
+              contype = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+             }
             bot.sendMessage(chatId,"---wait---");
-            bot.sendDocument(chatId,filePath).then((res)=>{
-              bot.sendMessage(chatId,res.document.file_name,{
-                reply_to_message_id:res.message_id,
-              })
+            bot.sendDocument(chatId,filePath,{},{contentType:contype}).then((res)=>{
+              // bot.sendMessage(chatId,res.document.file_name,{
+              //   reply_to_message_id:res.message_id,
+              // })
             })
           });
         }
