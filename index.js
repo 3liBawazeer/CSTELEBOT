@@ -16,11 +16,28 @@ const app = express();
 app.use(bodyParser.json());
 
 app.post('/webhook'+botToken, (req, res) => {
-    const data = req.body; // البيانات التي تم إرسالها من الويب هوك
-    // قم بكتابة منطق المعالجة هنا
-    console.log(data);
-    bot.processUpdate(data)
-    const response = { message: 'Webhook received successfully' };
+    const msg = req.body.message; // البيانات التي تم إرسالها من الويب هوك
+    console.log(msg,"<><><><><><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+    const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
+  
+    if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" ) {
+      bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
+      {
+        reply_markup:{
+          inline_keyboard:[
+            [{text:"مستوى اول", callback_data:JSON.stringify({type:"level",data:1,})}],
+            [{text:"مستوى ثاني",callback_data:JSON.stringify({type:"level",data:2,})}],
+            [{text:"مستوى ثالث",callback_data:JSON.stringify({type:"level",data:3,})}],
+            [{text:"مستوى رابع",callback_data:JSON.stringify({type:"level",data:4,})}],
+          ]
+        }
+      });
+    }
+  
+    if (text == "من عمك") {
+      bot.sendMessage("علي باوزير ")
+    }
     res.status(200).json(response);
 });
 
@@ -44,31 +61,31 @@ const current = {
 
 
 
-bot.on('message', (msg) => {
+// bot.on('message', (msg) => {
 
-  console.log(msg,"<><><><><><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+//   console.log(msg,"<><><><><><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
-  const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
+//   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
 
-  if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" ) {
-    bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
-    {
-      reply_markup:{
-        inline_keyboard:[
-          [{text:"مستوى اول", callback_data:JSON.stringify({type:"level",data:1,})}],
-          [{text:"مستوى ثاني",callback_data:JSON.stringify({type:"level",data:2,})}],
-          [{text:"مستوى ثالث",callback_data:JSON.stringify({type:"level",data:3,})}],
-          [{text:"مستوى رابع",callback_data:JSON.stringify({type:"level",data:4,})}],
-        ]
-      }
-    });
-  }
+//   if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" ) {
+//     bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
+//     {
+//       reply_markup:{
+//         inline_keyboard:[
+//           [{text:"مستوى اول", callback_data:JSON.stringify({type:"level",data:1,})}],
+//           [{text:"مستوى ثاني",callback_data:JSON.stringify({type:"level",data:2,})}],
+//           [{text:"مستوى ثالث",callback_data:JSON.stringify({type:"level",data:3,})}],
+//           [{text:"مستوى رابع",callback_data:JSON.stringify({type:"level",data:4,})}],
+//         ]
+//       }
+//     });
+//   }
 
-  if (text == "من عمك") {
-    bot.sendMessage("علي باوزير ")
-  }
+//   if (text == "من عمك") {
+//     bot.sendMessage("علي باوزير ")
+//   }
 
-});
+// });
 
 
 
