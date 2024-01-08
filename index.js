@@ -16,12 +16,12 @@ bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
 const app = express();
 app.use(bodyParser.json());
 
-app.post('/webhook'+botToken, (req, res) => {
-    const data = req.body; // البيانات التي تم إرسالها من الويب هوك
-    bot.processUpdate(data)
-    const response = { message: 'Webhook received successfully' };
-    res.status(200).json(response);
-});
+// app.post('/webhook'+botToken, (req, res) => {
+//     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
+//     bot.processUpdate(data)
+//     const response = { message: 'Webhook received successfully' };
+//     res.status(200).json(response);
+// });
 
 const port = process.env.PORT || 3000
 
