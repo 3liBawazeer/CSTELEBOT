@@ -9,13 +9,13 @@ const express = require('express');
 
 const app = express();
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
-const bot = new TelegramBot(botToken, { polling: true });
-
+const bot = new TelegramBot(botToken);
+bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
 app.use(bodyParser.json());
 
 
 
-app.post('/webhook', (req, res) => {
+app.post('/webhook'+botToken, (req, res) => {
     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
     // قم بكتابة منطق المعالجة هنا
     console.log(data);
@@ -35,7 +35,7 @@ const current = {
   },
 };
 
-bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook",)
+
 
 bot.on('message', (msg) => {
 
