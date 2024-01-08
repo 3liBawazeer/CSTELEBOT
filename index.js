@@ -46,7 +46,7 @@ const current = {
 
 bot.on('message', (msg) => {
 
-  console.log(msg);
+  console.log(msg,"<><><><><><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
 
