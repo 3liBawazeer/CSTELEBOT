@@ -78,15 +78,15 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         if (files.length == 0) {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
-          bot.sendMessage(chatId,"---sending---");
-          bot.sendDocument(chatId,path.join(folderPath, files[0]))
-          // files.map(file => {
-          //   const filePath = path.join(folderPath, file);
-          //   bot.sendMessage(chatId,"---wait---");
-          //   bot.sendDocument(chatId,filePath).then((res)=>{
-          //     console.log(res,"file sended");
-          //   })
-          // });
+          files.map(file => {
+            const filePath = path.join(folderPath, file);
+            bot.sendMessage(chatId,"---wait---");
+            bot.sendDocument(chatId,filePath).then((res)=>{
+              bot.sendMessage(chatId,res.document.file_name,{
+                reply_to_message_id:res.message_id,
+              })
+            })
+          });
         }
       });
       
