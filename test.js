@@ -5,7 +5,7 @@
 /* eslint-disable no-console */
 
 const TOKEN = "6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM";
-const url = "https://tiny-rose-pig-hose.cyclic.app/";
+const url = "https://tiny-rose-pig-hose.cyclic.app";
 const port = process.env.PORT || 3000 ;
 
 const TelegramBot = require('node-telegram-bot-api');
@@ -15,7 +15,7 @@ const express = require('express');
 const bot = new TelegramBot(TOKEN);
 
 // This informs the Telegram servers of the new webhook.
-bot.setWebHook(`${url}/webHook${TOKEN}`);
+
 
 const app = express();
 
@@ -23,7 +23,7 @@ const app = express();
 app.use(express.json());
 
 // We are receiving updates at the route below!
-app.post(`/webHook${TOKEN}`, (req, res) => {
+app.post(`/webhook`+TOKEN, (req, res) => {
   bot.processUpdate(req.body);
   res.sendStatus(200);
 });
@@ -33,7 +33,3 @@ app.listen(port, () => {
   console.log(`Express server is listening on ${port}`);
 });
 
-// Just to ping!
-bot.on('message', msg => {
-  bot.sendMessage(msg.chat.id, 'I am alive!');
-});
