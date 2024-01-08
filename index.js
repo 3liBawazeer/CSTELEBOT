@@ -81,11 +81,11 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         if (files.length == 0) {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
-          files.forEach( async file => {
+          files.map( async file => {
 
             const filePath = path.join(folderPath, file);
             console.log(filePath);
-            await bot.sendDocument(chatId,filePath,{},)
+            await bot.sendDocument(chatId,filePath)
         
           });
         }
