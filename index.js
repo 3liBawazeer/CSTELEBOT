@@ -72,6 +72,7 @@ bot.on('message', (msg) => {
 const sendbooks = (type = 0 || 1,chatId,data) => { 
     const folderPath = __dirname + "/computer scince/level_"+ data?.lv + "/term_" + data?.trm + "/" + data.fol + "/" + type;
     if (fs.existsSync(folderPath)) {
+
         fs.readdir(folderPath, (err, files) => {
         if (err) {
           console.error('حدث خطأ في قراءة محتوى المجلد:', err);
@@ -80,18 +81,19 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         if (files.length == 0) {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
-          files.map( async file => {
+          files.map(file => {
 
             const filePath = path.join(folderPath, file);
             console.log(filePath);
-            await bot.sendDocument(chatId,filePath)
+            bot.sendDocument(chatId,filePath,{},{filename:file})
         
           });
         }
       });
+      
    } else {
     bot.sendMessage(chatId,"🫢 ops !!");
-     }
+   }
  }
 
 const sendChannels = async (type = 0 || 1,chatId,data) => { 
