@@ -11,6 +11,7 @@ const express = require('express');
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
 const bot = new TelegramBot(botToken);
 
+bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
 
 const app = express();
 app.use(bodyParser.json());
@@ -26,7 +27,6 @@ const port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log('Server is running on port 3111');
-  bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
 });
 
 // bot.on("polling_error", console.log);
@@ -39,7 +39,6 @@ const current = {
     folder:"",
   },
 };
-
 
 
 bot.on('message', (msg) => {
