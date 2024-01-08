@@ -5,29 +5,29 @@ const { localDB } = require('./subjects');
 const bodyParser = require('body-parser');
 // replace the value below with the Telegram token you receive from @BotFather
 
-const express = require('express');
+// const express = require('express');
 
 
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
-const bot = new TelegramBot(botToken,{polling:false,filepath:false});
+const bot = new TelegramBot(botToken,{polling:true});
 
-bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
+// bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
 
-const app = express();
-app.use(bodyParser.json());
+// const app = express();
+// app.use(bodyParser.json());
 
 
-app.post('/webhook'+botToken, (req, res) => {
-    const data = req.body; // البيانات التي تم إرسالها من الويب هوك
-    bot.processUpdate(data)
-    res.sendStatus(200);
-});
+// app.post('/webhook'+botToken, (req, res) => {
+//     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
+//     bot.processUpdate(data)
+//     res.sendStatus(200);
+// });
 
-const port = process.env.PORT || 3000
+// const port = process.env.PORT || 3000
 
-app.listen(port, () => {
-  console.log('Server is running ' + port);
-});
+// app.listen(port, () => {
+//   console.log('Server is running ' + port);
+// });
 
 // bot.on("polling_error", console.log);
 const current = {
@@ -78,7 +78,7 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         if (files.length == 0) {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
-          files.map( async file => {
+          files.forEach( async file => {
             const filePath = path.join(folderPath, file);
             const buffer = fs.readFileSync(filePath)
             console.log(buffer);
