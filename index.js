@@ -11,22 +11,23 @@ const express = require('express');
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
 const bot = new TelegramBot(botToken);
 
-bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
+
 
 const app = express();
 app.use(bodyParser.json());
 
-// app.post('/webhook'+botToken, (req, res) => {
-//     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
-//     bot.processUpdate(data)
-//     const response = { message: 'Webhook received successfully' };
-//     res.status(200).json(response);
-// });
+app.post('/webhook'+botToken, (req, res) => {
+    const data = req.body; // البيانات التي تم إرسالها من الويب هوك
+    bot.processUpdate(data)
+    const response = { message: 'Webhook received successfully' };
+    res.status(200).json(response);
+});
 
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log('Server is running on port 3111');
+  bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
 });
 
 // bot.on("polling_error", console.log);
@@ -72,7 +73,6 @@ bot.on('message', (msg) => {
 const sendbooks = (type = 0 || 1,chatId,data) => { 
     const folderPath = __dirname + "/computer scince/level_"+ data?.lv + "/term_" + data?.trm + "/" + data.fol + "/" + type;
     if (fs.existsSync(folderPath)) {
-
         fs.readdir(folderPath, (err, files) => {
         if (err) {
           console.error('حدث خطأ في قراءة محتوى المجلد:', err);
@@ -212,7 +212,6 @@ bot.on("callback_query",(Q)=>{
         sendbooks(0,chatId,query)
         break;
       }
-
       case "youtubechannels":{
         sendChannels(0,chatId,query)
         break;
