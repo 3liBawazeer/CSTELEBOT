@@ -9,17 +9,24 @@ const express = require('express');
 
 
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
-const bot = new TelegramBot(botToken);
+const bot = new TelegramBot(botToken,{polling:false});
 
-
+bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
 
 const app = express();
 app.use(bodyParser.json());
 
-bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
+
 app.post('/webhook'+botToken, (req, res) => {
     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
-    bot.processUpdate(data)
+    const mesg = data.message , query = data.callback_query.data && JSON.parse(data.callback_query.data) ;
+    const chatId = data.callback_query.chat.id || data.message.chat.id
+    // bot.processUpdate(data)
+   
+    if (mesg) {
+      bot.sendMessage(chatId)
+    }
+    
     const response = { message: 'Webhook received successfully' };
     res.status(200).json(response);
 });
@@ -44,10 +51,12 @@ const current = {
 
 bot.on('message', (msg) => {
 
-  console.log(msg)
+  
 
   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
-
+  if (text == 'من عمك') {
+    bot.sendMessage(chatId,"علي باوزير ")
+  }
   if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" || text == "/start"  ) {
     bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
     {
@@ -62,9 +71,7 @@ bot.on('message', (msg) => {
     });
   }
 
-  if (text == "من عمك") {
-    bot.sendMessage("علي باوزير ")
-  }
+  
 
 });
 
@@ -105,6 +112,8 @@ const sendChannels = async (type = 0 || 1,chatId,data) => {
          الرابط : ${ele?.link}.
         `)
       })
+    }else{
+      bot.sendMessage(chatId,"🫢 ops !!");
     }
   } else {
     bot.sendMessage(chatId,"🫢 ops !!");
