@@ -16,6 +16,7 @@ const bot = new TelegramBot(botToken);
 const app = express();
 app.use(bodyParser.json());
 
+bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
 app.post('/webhook'+botToken, (req, res) => {
     const data = req.body; // البيانات التي تم إرسالها من الويب هوك
     bot.processUpdate(data)
@@ -26,8 +27,7 @@ app.post('/webhook'+botToken, (req, res) => {
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
-  console.log('Server is running on port 3111');
-  bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken,)
+  console.log('Server is running ' + port);
 });
 
 // bot.on("polling_error", console.log);
@@ -48,7 +48,7 @@ bot.on('message', (msg) => {
 
   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
 
-  if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" ) {
+  if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" || text == "/start"  ) {
     bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
     {
       reply_markup:{
@@ -82,11 +82,8 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
           bot.sendMessage(chatId,"🫢 ops !!");
         } else {
           files.map(file => {
-
             const filePath = path.join(folderPath, file);
-            console.log(filePath);
-            bot.sendDocument(chatId,filePath,{},{filename:file})
-        
+            bot.sendDocument(chatId,filePath,{caption:file,parse_mode:"MarkdownV2"},{filename:file})
           });
         }
       });
