@@ -183,6 +183,8 @@ bot.on("callback_query",(Q)=>{
           let subjects = localDB["level" + current.level ]["term" + (current.term)];
           const nameOfSubject = subjects.find((ele)=> ele[0].callback_data ? JSON.parse(ele[0].callback_data)?.folder == query.data.folder : false )
 
+          console.log(subjects);
+
           bot.editMessageText(nameOfSubject?`/                 ${nameOfSubject[0]?.text}                  \\`:"/                  ^_^                    \\",
         {
           chat_id:chatId,

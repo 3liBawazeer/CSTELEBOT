@@ -285,51 +285,51 @@ const localDB = {
       [
         {
           text: "Operating Systems",
-          callback_data: {
+          callback_data: JSON.stringify({
             type: "subj",
             isWorkable: true,
             folder: "OS",
-          },
+          }),
         },
       ],
       [
         {
           text: "English Language IV",
-          callback_data: {
+          callback_data: JSON.stringify({
             type: "subj",
             isWorkable: false,
             folder: "English",
-          },
+          }),
         },
       ],
       [
         {
           text: "Web Systems",
-          callback_data: {
+          callback_data: JSON.stringify({
             type: "subj",
             isWorkable: true,
             folder: "Web",
-          },
+          }),
         },
       ],
       [
         {
           text: " Thinking and Learning Skills",
-          callback_data: {
+          callback_data: JSON.stringify({
             type: "subj",
             isWorkable: false,
             folder: "Thinking",
-          },
+          }),
         },
       ],
       [
         {
           text: "Analysis of Algorithms & Thinking",
-          callback_data: {
+          callback_data: JSON.stringify({
             type: "subj",
             isWorkable: true,
             folder: "Alg",
-          },
+          }),
         },
       ],
     ],
