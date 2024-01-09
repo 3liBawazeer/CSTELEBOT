@@ -264,71 +264,71 @@ const localDB = {
     term2: [
       [
         {
-          text: "Object Orianted Programming",
+          text: "Communication Skills",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: true,
-            folder: "OOP",
+            isWorkable: false,
+            folder: "Communication Skills",
           }),
         },
       ],
       [
         {
-          text: "Computer Orgnization and Architucture",
+          text: "Introduction to Databases",
           callback_data: JSON.stringify({
             type: "subj",
             isWorkable: true,
-            folder: "CO&A",
+            folder: "DB",
           }),
         },
       ],
       [
         {
-          text: "Theory of Computation",
-          callback_data: {
-            type: "subj",
-            isWorkable: false,
-            folder: "TofC",
-          },
-        },
-      ],
-      [
-        {
-          text: "English Language",
-          callback_data: {
-            type: "subj",
-            isWorkable: false,
-            folder: "EL",
-          },
-        },
-      ],
-      [
-        {
-          text: "linear Algebra",
-          callback_data: {
-            type: "subj",
-            isWorkable: false,
-            folder: "LA",
-          },
-        },
-      ],
-      [
-        {
-          text: "Data Structure",
+          text: "Operating Systems",
           callback_data: {
             type: "subj",
             isWorkable: true,
-            folder: "DS",
+            folder: "OS",
           },
         },
       ],
       [
         {
-          text: "Probilty and Statisces",
+          text: "English Language IV",
           callback_data: {
             type: "subj",
             isWorkable: false,
-            folder: "P&S",
+            folder: "English",
+          },
+        },
+      ],
+      [
+        {
+          text: "Web Systems",
+          callback_data: {
+            type: "subj",
+            isWorkable: true,
+            folder: "Web",
+          },
+        },
+      ],
+      [
+        {
+          text: " Thinking and Learning Skills",
+          callback_data: {
+            type: "subj",
+            isWorkable: false,
+            folder: "Thinking",
+          },
+        },
+      ],
+      [
+        {
+          text: "Analysis of Algorithms & Thinking",
+          callback_data: {
+            type: "subj",
+            isWorkable: true,
+            folder: "Alg",
           },
         },
       ],

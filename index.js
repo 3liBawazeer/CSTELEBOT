@@ -50,6 +50,11 @@ bot.on('message', (msg) => {
   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
   if (text == 'من عمك') {
     bot.sendMessage(chatId,"علي باوزير ")
+    return
+  }
+  if (text == "السلام عليكم") {
+    bot.sendMessage(chatId,"وعليكم السلام")
+    return
   }
   if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" || text == "/start"  ) {
     bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
@@ -58,14 +63,15 @@ bot.on('message', (msg) => {
         inline_keyboard:[
           [{text:"مستوى اول", callback_data:JSON.stringify({type:"level",data:1,})}],
           [{text:"مستوى ثاني",callback_data:JSON.stringify({type:"level",data:2,})}],
-          [{text:"مستوى ثالث",callback_data:JSON.stringify({type:"level",data:3,})}],
-          [{text:"مستوى رابع",callback_data:JSON.stringify({type:"level",data:4,})}],
+          // [{text:"مستوى ثالث",callback_data:JSON.stringify({type:"level",data:3,})}],
+          // [{text:"مستوى رابع",callback_data:JSON.stringify({type:"level",data:4,})}],
         ]
       }
     });
+    return
   }
 
-  
+  bot.sendMessage(chatId,"يكفي لعب 😒 ")
 
 });
 
@@ -77,6 +83,7 @@ const sendbooks = (type = 0 || 1,chatId,data) => {
         fs.readdir( folderPath,  (err, files) => {
         if (err) {
           console.error('حدث خطأ في قراءة محتوى المجلد:', err);
+          bot.sendMessage(chatId,"🫢 ops !!");
           return;
         }
         if (files.length == 0) {
