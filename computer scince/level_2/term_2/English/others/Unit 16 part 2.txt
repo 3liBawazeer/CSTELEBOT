@@ -1,0 +1,85 @@
+P 81:
+
+Internet FAQs: Part 2
+
+Email
+
+Email lets you exchange messages with people all over the world. Optional attached files can include text, pictures and even audio and animation. A mailing list uses email to communicate messages to all its subscribers - that is, everyone that belongs to the list.
+
+Which email program is the best?
+
+Outlook Express is a popular program, but many users use web-based email accounts such as Hotmail.
+
+The Web
+
+The Web consists of billions of documents living on web servers that use the HTTP protocol. You navigate through the Web using a program called a web browser, which lets you search, view and print web pages.
+
+How often are web pages updated?
+
+It depends entirely on the page. Some are updated thousands of times a day.
+
+Chat and Instant Messaging (IM)
+
+Chat and Instant Messaging technologies allow you to have real-time conversations online, by typing messages at the keyboard.
+
+FTP
+
+FTP, or file transfer protocol, is used to transfer files over a TCP/IP network. Nowadays, this feature is built into Web browsers. You can download programs, games and music files from a remote computer to your hard drive.
+
+Telnet
+
+Telnet is a protocol and a program used to log onto remote computer systems. It enables you to enter commands that will be executed as if you were entering them directly on the remote server.
+
+Newsgroups
+
+Newsgroups are the public discussion areas which make up a system called Usenet. The contents are contributed by people who post articles or respond to articles, creating chains of related postings called message threads. You need a newsreader to subscribe to newsgroups and to read and post messages. The newsreader may be a stand-alone program or part of a web browser.
+
+How many newsgroups are there?
+
+There are approximately 30,000 active newsgroups.
+
+Where can you find newsgroups?
+
+Your newsreader may allow you to download the newsgroup addresses that your ISP has included on its news server. An alternative to using a newsreader is to visit web forums instead, which perform the same function but without the additional software.
+
+الأسئلة الشائعة على الإنترنت: الجزء 2
+
+البريد الإلكتروني
+
+يتيح لك البريد الإلكتروني تبادل الرسائل مع الأشخاص في جميع أنحاء العالم. يمكن أن تشتمل الملفات المرفقة الاختيارية على نصوص وصور وحتى ملفات صوتية ورسوم متحركة. تستخدم القائمة البريدية البريد الإلكتروني لتوصيل الرسائل إلى جميع مشتركيها - أي كل من ينتمي إلى القائمة.
+
+أي برنامج بريد إلكتروني هو الأفضل؟
+
+يعد Outlook Express برنامجًا شائعًا ، لكن العديد من المستخدمين يستخدمون حسابات بريد إلكتروني قائمة على الويب مثل Hotmail.
+
+الويب
+
+يتكون الويب من مليارات المستندات التي تعيش على خوادم الويب التي تستخدم بروتوكول HTTP. يمكنك التنقل عبر الويب باستخدام برنامج يسمى مستعرض الويب ، والذي يتيح لك البحث في صفحات الويب وعرضها وطباعتها.
+
+كم مرة يتم تحديث صفحات الويب؟
+
+يعتمد كليا على الصفحة. يتم تحديث بعضها آلاف المرات في اليوم.
+
+الدردشة والمراسلة الفورية (IM)
+
+تتيح لك تقنيات الدردشة والمراسلة الفورية إجراء محادثات فورية عبر الإنترنت عن طريق كتابة الرسائل على لوحة المفاتيح.
+
+بروتوكول نقل الملفات
+
+يستخدم بروتوكول نقل الملفات أو بروتوكول نقل الملفات لنقل الملفات عبر شبكة TCP / IP. في الوقت الحاضر ، تم تضمين هذه الميزة في متصفحات الويب. يمكنك تنزيل البرامج والألعاب وملفات الموسيقى من كمبيوتر بعيد إلى محرك الأقراص الثابتة.
+
+Telnet
+
+Telnet هو بروتوكول وبرنامج يستخدم لتسجيل الدخول إلى أنظمة الكمبيوتر البعيدة. يمكّنك من إدخال الأوامر التي سيتم تنفيذها كما لو كنت تدخلها مباشرة على الخادم البعيد.
+
+مجموعات الأخبار
+
+مجموعات الأخبار هي مناطق المناقشة العامة التي تشكل نظامًا يسمى Usenet. يتم المساهمة بالمحتويات بواسطة الأشخاص الذين ينشرون مقالات أو يردون عليها ، مما يؤدي إلى إنشاء سلاسل من المنشورات ذات الصلة تسمى سلاسل الرسائل. أنت بحاجة إلى قارئ أخبار للاشتراك في مجموعات الأخبار وقراءة الرسائل ونشرها. قد يكون قارئ الأخبار برنامجًا مستقلاً أو جزءًا من مستعرض ويب.
+
+كم عدد مجموعات الأخبار هناك؟
+
+هناك ما يقرب من 30000 مجموعة أخبار نشطة.
+
+أين يمكنك أن تجد مجموعات الأخبار؟
+
+قد يسمح لك قارئ الأخبار بتنزيل عناوين مجموعات الأخبار التي قام موفر خدمة الإنترنت بتضمينها على خادم الأخبار الخاص به. من البدائل لاستخدام قارئ الأخبار زيارة منتديات الويب بدلاً من ذلك ، والتي تؤدي نفس الوظيفة ولكن بدون البرامج الإضافية.

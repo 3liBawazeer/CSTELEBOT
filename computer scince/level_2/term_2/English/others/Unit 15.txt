@@ -1,0 +1,28 @@
+P 76:
+Databases
+
+A database is a collection of related data, and the software used in databases to store, organize and retrieve the data is called the database management system, or DBMS. However, we often use the word database to cover both meanings. A database can manage any type of data, including text, numbers, images, sound, video and hyperlinks (links to websites).
+
+Information is entered into the database via fields. Each field holds a separate piece of information, and the fields are grouped together in records. Therefore, a record about an employee might consist of several fields which give their name, address, phone number, date of birth, salary and length of employment with the company.
+
+Records are grouped together into files which hold large amounts of information. Files can easily be updated - you can always change fields, add new records or delete old ones. An electronic database is much faster to consult and update than a card index system and occupies a lot less space. With the right software, you can keep track of stock, sales, market trends, orders and other information that can help your company stay successful.
+
+A database program lets you create an index - a list of records ordered according to the content of certain fields. This helps you to search the database and sort records into numerical or alphabetical order very quickly. Modern databases are relational - that is, they are made up of related files: customers and orders, vendors and purchases, students and tutors, etc. Two database files can be related as long as they have a common field. A file of students, for example, could include a field called Tutor ID and another file with details of the tutors could include the same field. This key field can be used to relate the two files. Databases like Oracle, DB2 and MySQL can manage these relationships.
+
+A database query function allows you to extract information according to certain conditions or criteria. For example, if a managing director wanted to know all the customers that spend more than €8,000 per month, the program would search on the name field and the money field simultaneously.
+
+The best database packages also include network facilities, which can make businesses more productive. For example, managers of different departments can have direct access to a common database. Most aspects of the program can be protected by user-defined passwords and other security devices. For example, if you wanted to share an employee's personal details but not their commission, you could protect the commission field.
+
+قواعد بيانات
+
+قاعدة البيانات عبارة عن مجموعة من البيانات ذات الصلة ، ويطلق على البرنامج المستخدم في قواعد البيانات لتخزين البيانات وتنظيمها واستردادها نظام إدارة قواعد البيانات ، أو DBMS. ومع ذلك ، فإننا غالبًا ما نستخدم قاعدة بيانات الكلمات لتغطية كلا المعنيين. يمكن لقاعدة البيانات إدارة أي نوع من البيانات ، بما في ذلك النصوص والأرقام والصور والصوت والفيديو والارتباطات التشعبية (روابط لمواقع الويب).
+
+يتم إدخال المعلومات في قاعدة البيانات عبر الحقول. يحتوي كل حقل على معلومة منفصلة ، ويتم تجميع الحقول معًا في سجلات. لذلك ، قد يتكون السجل الخاص بالموظف من عدة حقول توضح الاسم والعنوان ورقم الهاتف وتاريخ الميلاد والراتب ومدة العمل في الشركة.
+
+يتم تجميع السجلات معًا في ملفات تحتوي على كميات كبيرة من المعلومات. يمكن تحديث الملفات بسهولة - يمكنك دائمًا تغيير الحقول أو إضافة سجلات جديدة أو حذف السجلات القديمة. قاعدة البيانات الإلكترونية أسرع بكثير في الرجوع إليها وتحديثها من نظام فهرسة البطاقة وتشغل مساحة أقل بكثير. باستخدام البرنامج المناسب ، يمكنك تتبع الأسهم والمبيعات واتجاهات السوق والأوامر والمعلومات الأخرى التي يمكن أن تساعد شركتك في الحفاظ على نجاحها.
+
+يتيح لك برنامج قاعدة البيانات إنشاء فهرس - قائمة من السجلات مرتبة وفقًا لمحتوى حقول معينة. يساعدك هذا في البحث في قاعدة البيانات وفرز السجلات بترتيب رقمي أو أبجدي بسرعة كبيرة. قواعد البيانات الحديثة علائقية - أي أنها تتكون من ملفات ذات صلة: العملاء والطلبات ، والبائعين والمشتريات ، والطلاب والمعلمين ، وما إلى ذلك. يمكن أن يرتبط ملفان من قواعد البيانات طالما أنهما يحتويان على مجال مشترك. يمكن أن يتضمن ملف الطلاب ، على سبيل المثال ، حقلاً يسمى معرف المعلم ويمكن أن يشتمل ملف آخر يحتوي على تفاصيل المعلمين على نفس الحقل. يمكن استخدام حقل المفتاح هذا لربط الملفين. يمكن لقواعد البيانات مثل Oracle و DB2 و MySQL إدارة هذه العلاقات.
+
+تتيح لك وظيفة استعلام قاعدة البيانات استخراج المعلومات وفقًا لشروط أو معايير معينة. على سبيل المثال ، إذا أراد المدير العام معرفة جميع العملاء الذين ينفقون أكثر من 8000 يورو شهريًا ، فسيقوم البرنامج بالبحث في حقل الاسم وحقل المال في وقت واحد.
+
+تتضمن أفضل حزم قواعد البيانات أيضًا مرافق الشبكة ، والتي يمكن أن تجعل الشركات أكثر إنتاجية. على سبيل المثال ، يمكن لمديري الأقسام المختلفة الوصول المباشر إلى قاعدة بيانات مشتركة. يمكن حماية معظم جوانب البرنامج بواسطة كلمات مرور محددة بواسطة المستخدم وأجهزة أمان أخرى. على سبيل المثال ، إذا أردت مشاركة التفاصيل الشخصية للموظف وليس عمولته ، يمكنك حماية حقل العمولة.

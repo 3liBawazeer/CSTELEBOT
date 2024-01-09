@@ -1,0 +1,57 @@
+P 64:
+
+GUI operating systems 
+
+The term user interface refers to the standard procedures that the user follows in order to interact with a computer. In the late 1970s and early 80s, the way users accessed computer systems was very 5 complex. They had to memorize and type a lot of commands just to see the contents of a disk, to copy files or to respond to a single prompt. In fact, it was only experts who used computers, so there was no need for a user-friendly interface. 
+
+In 1984, Apple produced the Macintosh, the first computer with a mouse and a graphical user interface (GUI). Macs were designed with one clear aim: to facilitate interaction with the computer. A few years later, Microsoft launched Windows, another operating system based on graphics and intuitive tools. Nowadays, computers are used by all kinds of people, and as a result there is a growing emphasis on accessibility and user-friendly systems. 
+
+A GUI makes use of a WIMP environment: windows, icons, menus and pointer. The background of the screen is called the desktop, which contains labelled pictures called icons. These icons represent files or folders. Double-clicking a folder opens a window which contains programs, documents, or more nested folders. When you are in a folder, you can launch a program or document by double-clicking the icon, or you can drag it to another location. When you run a program, your PC opens a window that lets you work with different tools. All the programs have a high level of consistency, with similar toolbars, menu bars, buttons and dialog boxes. A modern OS also provides access to networks and allows multitasking, which means you can run several programs - and do various tasks - at the same time. 
+
+The most popular operating systems are: 
+
+▪︎ The Windows family - designed by Microsoft and used on most PCs. The most recent version is Windows Vista. 
+
+▪︎ Mac OS - created by Apple and used on Macintosh computers. 
+
+▪︎ Unix - a multi-user system, found on mainframes and workstations in corporate installations. 
+
+▪︎ Linux - open-source software developed under the GNU General Public License. This means anybody can copy its source code, change it and distribute it. It is used in computers, appliances and small devices. 
+
+▪︎ Windows Mobile - used on most PDAs and smartphones (PDAs incorporating mobile phones). 
+
+▪︎ Palm OS - used on Palm handheld devices. 
+
+▪︎ RIM - used on BlackBerry communication devices. Developed by Research In Motion. 
+
+▪︎ The Symbian OS - used by some phone makers, including Nokia and Siemens. 
+
+These computer platforms differ in areas such as device installation, network connectivity or compatibility with application software.
+
+أنظمة تشغيل واجهة المستخدم الرسومية
+
+يشير مصطلح واجهة المستخدم إلى الإجراءات القياسية التي يتبعها المستخدم للتفاعل مع الكمبيوتر. في أواخر السبعينيات وأوائل الثمانينيات ، كانت طريقة وصول المستخدمين إلى أنظمة الكمبيوتر معقدة للغاية. كان عليهم أن يحفظوا ويكتبوا الكثير من الأوامر فقط لرؤية محتويات القرص أو لنسخ الملفات أو للرد على مطالبة واحدة. في الواقع ، كان الخبراء فقط هم من استخدموا أجهزة الكمبيوتر ، لذلك لم تكن هناك حاجة لواجهة سهلة الاستخدام.
+
+في عام 1984 ، أنتجت شركة Apple جهاز Macintosh ، وهو أول كمبيوتر مزود بالماوس وواجهة مستخدم رسومية (GUI). تم تصميم أجهزة Mac بهدف واحد واضح: تسهيل التفاعل مع الكمبيوتر. بعد بضع سنوات ، أطلقت Microsoft Windows ، وهو نظام تشغيل آخر يعتمد على الرسومات والأدوات البديهية. في الوقت الحاضر ، يتم استخدام أجهزة الكمبيوتر من قبل جميع أنواع الأشخاص ، ونتيجة لذلك هناك تركيز متزايد على إمكانية الوصول والأنظمة سهلة الاستخدام.
+
+تستخدم واجهة المستخدم الرسومية بيئة WIMP: النوافذ والأيقونات والقوائم والمؤشر. تسمى خلفية الشاشة بسطح المكتب ، والتي تحتوي على صور معنونة تسمى أيقونات. تمثل هذه الرموز الملفات أو المجلدات. يؤدي النقر المزدوج فوق مجلد إلى فتح نافذة تحتوي على برامج أو مستندات أو المزيد من المجلدات المتداخلة. عندما تكون في مجلد ، يمكنك تشغيل برنامج أو مستند بالنقر المزدوج فوق الرمز ، أو يمكنك سحبه إلى موقع آخر. عند تشغيل أحد البرامج ، يفتح جهاز الكمبيوتر الخاص بك نافذة تتيح لك العمل باستخدام أدوات مختلفة. تتمتع جميع البرامج بمستوى عالٍ من التناسق ، مع أشرطة أدوات وأشرطة قوائم وأزرار ومربعات حوار مماثلة. يوفر نظام التشغيل الحديث أيضًا إمكانية الوصول إلى الشبكات ويسمح بتعدد المهام ، مما يعني أنه يمكنك تشغيل العديد من البرامج - والقيام بمهام متنوعة - في نفس الوقت.
+
+أنظمة التشغيل الأكثر شيوعًا هي:
+
+▪︎ عائلة Windows - تم تصميمها بواسطة Microsoft وتستخدم على معظم أجهزة الكمبيوتر. أحدث إصدار هو Windows Vista.
+
+▪︎ Mac OS - تم إنشاؤه بواسطة Apple واستخدامه على أجهزة كمبيوتر Macintosh.
+
+▪︎ Unix - نظام متعدد المستخدمين ، موجود في الحواسيب المركزية ومحطات العمل في منشآت الشركة.
+
+▪︎ Linux - برنامج مفتوح المصدر تم تطويره بموجب رخصة جنو العمومية العامة. هذا يعني أنه يمكن لأي شخص نسخ كود المصدر الخاص به وتغييره وتوزيعه. يتم استخدامه في أجهزة الكمبيوتر والأجهزة والأجهزة الصغيرة.
+
+▪︎ Windows Mobile - يستخدم في معظم أجهزة المساعد الرقمي الشخصي والهواتف الذكية (أجهزة المساعد الرقمي الشخصي التي تتضمن الهواتف المحمولة).
+
+▪︎ Palm OS - يستخدم على أجهزة Palm المحمولة باليد.
+
+▪︎ RIM - تُستخدم على أجهزة اتصالات BlackBerry. تم تطويره بواسطة Research In Motion.
+
+▪︎ نظام التشغيل Symbian OS - المستخدم من قبل بعض صانعي الهواتف ، بما في ذلك Nokia و Siemens.
+
+تختلف أنظمة الكمبيوتر الأساسية هذه في مجالات مثل تثبيت الجهاز أو الاتصال بالشبكة أو التوافق مع البرامج التطبيقية. 

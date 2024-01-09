@@ -1,0 +1,49 @@
+P 49:
+
+Magnetic storage
+
+Magnetic storage devices store data by magnetizing particles on a disk or tape.
+
+A floppy disk is so called because it consists of a flexible sheet of plastic, coated with iron oxide-a magnetizable material. A floppy disk drive spins at 360 revolutions per minute (rpm), so it's relatively slow. However, a hard drive spins at over 7,200 rpm and stores data on a stack of metal rotating disks
+
+called platters. This means you can store much more data and retrieve information much faster. New disks need to be formatted before you can use them, unless they come preformatted from the manufacturer. When the disk is formatted, the operating system (OS) organizes the disk surface into circular tracks and divides each track into sectors. The OS creates a directory which will record the specific location of files. When you save a file, the OS moves the read/write head of the drive towards empty sectors, records the data and writes an entry for the directory. Later on, when you open that file, the OS looks for its entry in the directory, moves the read/write heads to the correct sector, and reads the file in the RAM area. However, formatting erases any existing files on a disk, so do not format disks on which data that you don't want to lose is stored.
+
+The OS allows you to create one or more partitions on your hard drive, in effect dividing it into several logical parts. Partitions let you install more than one operating system (e.g. Windows and Linux) on your computer. You may also decide to split your hard drive because you want to store the OS and programs on one partition and your data files on another; this allows you to reinstall the OS when a problem occurs, without affecting the data partition.
+
+The average time required for the read/ write heads to move and find data is called seek time (or access time) and it is measured in milliseconds (ms); most hard drives have a seek time of 7 to 14 ms. Don't confuse this with transfer rate - the average speed required to transmit data from the disk to the CPU, measured in megabytes per second.
+
+Toshiba's 1.8" hard drive; mini hard drives are used in small gadgets, such as PDAs and wristwatches
+
+How to protect your hard drive
+
+Don't hit or move the computer while the hard drive is spinning. Hard drives are very sensitive to vibration and shocks, especially when they are operating; when the read/write head touches the rotating disk, it can scratch and damage the disk surface. This is known as head crash.
+
+You shouldn't turn your computer off and on quickly. Wait at least ten seconds to ensure that the drive has stopped spinning.
+
+■Check your hard drive regularly for logical and physical errors. To check and repair a drive, you can use a disk diagnosis utility like Windows ScanDisk.
+
+To minimize the risk of data loss or corruption, you should install an up-to-date virus scanner. You should also back up your hard drive regularly.
+
+التخزين المغناطيسي
+تخزن أجهزة التخزين المغناطيسية البيانات عن طريق جذب الجسيمات على قرص أو شريط.
+
+يسمى القرص المرن بذلك لأنه يتكون من صفيحة بلاستيكية مرنة مطلية بأكسيد الحديد - مادة قابلة للمغنطة. يدور محرك الأقراص المرنة بسرعة 360 دورة في الدقيقة (rpm) ، لذا فهو بطيء نسبيًا. ومع ذلك ، يدور محرك الأقراص الثابتة بسرعة تزيد عن 7200 دورة في الدقيقة ويخزن البيانات على كومة من الأقراص المعدنية الدوارة تسمى الأطباق.
+ هذا يعني أنه يمكنك تخزين المزيد من البيانات واسترداد المعلومات بشكل أسرع.
+
+ يجب تهيئة الأقراص الجديدة قبل أن تتمكن من استخدامها ، ما لم يتم تنسيقها مسبقًا من الشركة المصنعة. عند تهيئة القرص ، يقوم نظام التشغيل (OS) بتنظيم سطح القرص إلى مسارات دائرية ويقسم كل مسار إلى قطاعات. يقوم نظام التشغيل بإنشاء دليل يسجل الموقع المحدد للملفات. عند حفظ ملف ، يحرك نظام التشغيل رأس القراءة / الكتابة لمحرك الأقراص نحو القطاعات الفارغة ، ويسجل البيانات ويكتب إدخالاً للدليل. في وقت لاحق ، عندما تفتح هذا الملف ، يبحث نظام التشغيل عن إدخاله في الدليل ، وينقل رؤوس القراءة / الكتابة إلى القطاع الصحيح ، ويقرأ الملف في منطقة ذاكرة الوصول العشوائي. ومع ذلك ، يؤدي التنسيق إلى مسح أي ملفات موجودة على القرص ، لذا لا تقم بتهيئة الأقراص التي يتم تخزين البيانات التي لا تريد فقدها عليها.
+
+يتيح لك نظام التشغيل إنشاء قسم واحد أو أكثر على محرك الأقراص الثابتة ، مما يؤدي في الواقع إلى تقسيمه إلى عدة أجزاء منطقية. تتيح لك الأقسام تثبيت أكثر من نظام تشغيل واحد (مثل Windows و Linux) على جهاز الكمبيوتر الخاص بك. قد تقرر أيضًا تقسيم محرك الأقراص الثابتة لأنك تريد تخزين نظام التشغيل والبرامج على أحد الأقسام وملفات البيانات الخاصة بك على قسم آخر ؛ يتيح لك ذلك إعادة تثبيت نظام التشغيل عند حدوث مشكلة ، دون التأثير على قسم البيانات.
+
+ متوسط ​​الوقت اللازم لتحريك رؤوس القراءة / الكتابة والعثور على البيانات يسمى وقت البحث (أو وقت الوصول) ويتم قياسه بالمللي ثانية (مللي ثانية) ؛ تستغرق معظم محركات الأقراص الثابتة وقت البحث من 7 إلى 14 مللي ثانية. لا تخلط بين هذا وبين معدل النقل - متوسط ​​السرعة المطلوبة لنقل البيانات من القرص إلى وحدة المعالجة المركزية ، تُقاس بالميغابايت في الثانية.
+
+محرك الأقراص الثابتة مقاس 1.8 بوصة من Toshiba ؛ تُستخدم محركات الأقراص الثابتة الصغيرة في الأدوات الصغيرة ، مثل أجهزة المساعد الرقمي الشخصي وساعات اليد
+
+ كيف تحمي القرص الصلب الخاص بك
+
+لا تضغط على الكمبيوتر أو تحركه أثناء دوران القرص الصلب. تعتبر محركات الأقراص الصلبة شديدة الحساسية للاهتزازات والصدمات ، خاصة عند تشغيلها ؛ عندما يلمس رأس القراءة / الكتابة القرص الدوار ، يمكن أن يخدش سطح القرص ويتلفه. يُعرف هذا باسم تحطم الرأس.
+
+لا يجب إيقاف تشغيل الكمبيوتر وتشغيله بسرعة. انتظر عشر ثوانٍ على الأقل للتأكد من توقف محرك الأقراص عن الدوران.
+
+ ■ افحص محرك الأقراص الثابتة بانتظام بحثًا عن الأخطاء المنطقية والمادية. لفحص محرك الأقراص وإصلاحه ، يمكنك استخدام أداة تشخيص القرص مثل Windows ScanDisk.
+
+ لتقليل مخاطر فقدان البيانات أو تلفها ، يجب عليك تثبيت برنامج فحص فيروسات محدث. يجب عليك أيضًا إجراء نسخ احتياطي لمحرك الأقراص الثابتة بانتظام.

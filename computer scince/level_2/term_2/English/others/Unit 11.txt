@@ -1,0 +1,66 @@
+P 53:
+
+Optical discs and drives
+
+Optical discs can store data at much higher densities than magnetic disks. They are therefore ideal for multimedia applications where images, animation and sound occupy a lot of disc space. Furthermore, optical discs are not affected by magnetic fields, meaning that they are secure and stable, and can be transported through airport metal detectors without damaging the data. However, optical drives are slower than hard drives.
+
+CDs and DVDs
+
+At first sight, a DVD is similar to a CD. Both discs are 120 mm in diameter and 1.2 mm thick. They also both use a laser beam to read data. However, they are very different in internal structure and data capacity. In a DVD, the tracks are very close together, thus allowing more tracks. The pits in which data is stored are also smaller, so there are more pits per track. As a result, a CD can hold 650-700MB, whereas a basic DVD can hold 4.7GB. In addition, a DVD can be double-sided and dual layer, with a capacity of 17GB.
+
+CDs come in three different formats:
+
+- CD-ROMs (read-only memory) are read-only units, meaning you cannot change the data stored on them (for example, a dictionary or a game).
+
+- CD-R (recordable) discs are write-once devices which let you duplicate music CDs and other data CDs.
+
+- CD-RW (rewritable) discs enable you to write onto them many times, just like a hard disk.
+
+DVDs also come in several formats:
+
+DVD-ROMs are used in DVD computer drives. They allow for data archiving as well as interactive content (for example, an encyclopedia or a movie).
+
+DVD-R or DVD+R can only be recorded on once.
+
+DVD-RW or DVD+RW discs can be erased and re used many times. They are used to back up data files and to record audio and video.
+
+The DVD drive used in computers is also called a DVD burner because it records information by burning via a laser to a blank DVD disc. However, a DVD recorder typically refers to a standalone unit which resembles a video cassette recorder. New DVD recorders can play all CD and DVD formats. There are also portable DVD players - handheld devices which let you watch movies or TV, play games and listen to music, wherever you are. They come with a built-in DVD drive and widescreen (rectangular 16:9 format) LCD display. They usually support multi-format playback - that is, they can play many file formats, including DVD-video, DivX, CD audio discs, MP3 music and JPEG images.
+
+HD-DVD and Blu-ray discs
+
+These two competing formats are expected to replace current DVD as the standard for watching movies at home. On one side are Toshiba, Microsoft and the DVD Forum, who support the High Definition-DVD (HD DVD). Sony, Panasonic, Samsung, JVC and many movie studios are behind the Blu-ray format.
+
+A Blu-ray disc has a capacity of 25GB (single layer), 50GB (dual layer) and 100GB (four layer). Unlike DVDs, which use a red laser to read and write data, Blu-ray uses a blue violet laser, hence its name. Blu-ray discs can record and play back high-definition television and digital audio, as well as computer data.
+
+الأقراص ومحركات الأقراص الضوئية
+
+يمكن للأقراص الضوئية تخزين البيانات بكثافة أعلى بكثير من الأقراص المغناطيسية. لذلك فهي مثالية لتطبيقات الوسائط المتعددة حيث تشغل الصور والرسوم المتحركة والصوت مساحة كبيرة على القرص. علاوة على ذلك ، لا تتأثر الأقراص الضوئية بالمجالات المغناطيسية ، مما يعني أنها آمنة ومستقرة ، ويمكن نقلها عبر أجهزة الكشف عن المعادن في المطارات دون الإضرار بالبيانات. ومع ذلك ، فإن محركات الأقراص الضوئية أبطأ من محركات الأقراص الثابتة.
+
+الأقراص المدمجة وأقراص DVD
+
+للوهلة الأولى ، يشبه قرص DVD قرص مضغوط. يبلغ قطر كلا القرصين 120 مم وسمكهما 1.2 مم. كلاهما يستخدم أيضًا شعاع ليزر لقراءة البيانات. ومع ذلك ، فهي مختلفة جدًا في البنية الداخلية وقدرة البيانات.
+
+ في DVD ، تكون المسارات قريبة جدًا من بعضها ، مما يتيح المزيد من المسارات. كما أن الحفر التي يتم تخزين البيانات فيها أصغر أيضًا ، لذلك هناك عدد أكبر من الحفر لكل مسار. نتيجة لذلك ، يمكن أن يحتوي القرص المضغوط على 650-700 ميجابايت ، بينما يمكن أن يحتوي قرص DVD الأساسي على 4.7 جيجابايت. بالإضافة إلى ذلك ، يمكن أن يكون قرص DVD على الوجهين والطبقة المزدوجة ، بسعة 17 جيجابايت.
+
+تأتي الأقراص المضغوطة بثلاثة تنسيقات مختلفة:
+
+- الأقراص المضغوطة (ذاكرة القراءة فقط) هي وحدات للقراءة فقط ، مما يعني أنه لا يمكنك تغيير البيانات المخزنة عليها (على سبيل المثال ، قاموس أو لعبة).
+
+- أقراص CD-R (القابلة للتسجيل) هي أجهزة تعمل بالكتابة مرة واحدة والتي تتيح لك نسخ أقراص الموسيقى المضغوطة وأقراص البيانات المضغوطة الأخرى.
+
+- تمكنك أقراص CD-RW (القابلة لإعادة الكتابة) من الكتابة عليها عدة مرات ، تمامًا مثل القرص الصلب.
+
+تأتي أقراص DVD أيضًا بعدة تنسيقات:
+
+تستخدم أقراص DVD-ROM في محركات أقراص DVD. أنها تسمح لأرشفة البيانات وكذلك المحتوى التفاعلي (على سبيل المثال ، موسوعة أو فيلم).
+
+ يمكن تسجيل DVD-R أو DVD + R مرة واحدة فقط.
+
+ يمكن مسح أقراص DVD-RW أو DVD + RW وإعادة استخدامها عدة مرات. يتم استخدامها لنسخ ملفات البيانات احتياطيًا وتسجيل الصوت والفيديو.
+
+ يُطلق على محرك أقراص DVD المستخدم في أجهزة الكمبيوتر أيضًا ناسخ أقراص DVD لأنه يسجل المعلومات عن طريق النسخ بالليزر على قرص DVD فارغ. ومع ذلك ، يشير مسجل DVD عادةً إلى وحدة قائمة بذاتها تشبه مسجل شريط فيديو. يمكن لمسجلات DVD الجديدة تشغيل جميع تنسيقات الأقراص المضغوطة وأقراص DVD. هناك أيضًا مشغلات DVD محمولة - أجهزة محمولة تتيح لك مشاهدة الأفلام أو التلفزيون وممارسة الألعاب والاستماع إلى الموسيقى أينما كنت. تأتي مع محرك أقراص DVD مدمج وشاشة عرض LCD عريضة (مستطيلة الشكل 16: 9). عادةً ما يدعمون التشغيل متعدد التنسيقات - أي يمكنهم تشغيل العديد من تنسيقات الملفات ، بما في ذلك DVD-video و DivX وأقراص الصوت المضغوطة وموسيقى MP3 وصور JPEG.
+
+ أقراص HD-DVD و Blu-ray
+ من المتوقع أن يحل هذان التنسيقان المتنافسان محل قرص DVD الحالي كمعيار لمشاهدة الأفلام في المنزل. على جانب واحد توجد Toshiba و Microsoft ومنتدى DVD ، الذين يدعمون HD DVD (HD DVD). تعد Sony و Panasonic و Samsung و JVC والعديد من استوديوهات الأفلام وراء تنسيق Blu-ray.
+
+ تبلغ سعة قرص Blu-ray 25 جيجابايت (طبقة واحدة) و 50 جيجابايت (طبقة مزدوجة) و 100 جيجابايت (أربع طبقات). على عكس أقراص DVD ، التي تستخدم الليزر الأحمر لقراءة البيانات وكتابتها ، يستخدم Blu-ray الليزر الأزرق البنفسجي ، ومن هنا جاء اسمه. يمكن لأقراص Blu-ray تسجيل وتشغيل التلفزيون عالي الدقة والصوت الرقمي ، بالإضافة إلى بيانات الكمبيوتر

@@ -1,0 +1,81 @@
+P 80:
+
+Internet FAQs: Part 1
+
+How old is the Internet (the Net)? When was it created?
+
+It's hard to say exactly. The research that led to what we now know as the Internet was begun in the 1960s.
+
+Who created the Internet?
+
+Again, it's hard to say exactly who created it. The initial research was carried out by the Advanced Research Projects Agency in America, funded by the US government.
+
+Did the Internet become popular quickly?
+
+It took many years for the Internet to become popular around the world. It's only really since the mid-90s that the Internet has been a part of our daily lives.
+
+How do you get online?
+
+To get connected, you need a computer, the right connection software and a modem connected to the phone line. You also need an account with an Internet Service Provider (ISP), which acts as a gateway between your PC and the rest of the Net.
+
+How fast are today's internet connections?
+
+Today, ISPS offer a broadband, high-speed connection. The most common types are cable - offered by local cable TV companies - and ADSL (Asymmetric Digital Subscriber Line), which works through phone lines. They are both faster than the traditional dial-up telephone connection. Broadband access is also offered by some electricity networks. This competing technology, known as power-line Internet, provides low-cost access via the power plug, but is still in development.
+
+How long has broadband existed? Since the late 1990s.
+
+How much does broadband access cost?
+
+It depends on which company you choose. Nowadays, some companies even offer free broadband.
+
+Why do you need a modem?
+
+A modem (modulator/demodulator) converts digital signals into analogue signals so that data can be transmitted across the phone or cable network.
+
+What does TCP/IP mean?
+
+The language used for data transfer on the Internet is known as TCP/IP (transmission control protocol/ Internet protocol). This is like the internet operating system. Every computer connected to the Net is identified by a unique IP address.
+
+Are there other ways of accessing the Internet?
+
+Other methods of internet access include Wi-Fi, satellite, mobile phones and TV sets equipped with a modem. Wi-Fi-enabled laptops or PDAs allow you to connect to the Net if you are near a wireless access point, in locations called hotspots (for example, a Wi-Fi café, park or campus). Satellite services are used in places where terrestrial access is not available (for example, on ships at sea). High-end mobile phones provide access through the phone network.
+
+الأسئلة الشائعة على الإنترنت: الجزء 1
+
+كم عمر الإنترنت (النت)؟ متى تم إنشاؤه؟
+
+من الصعب القول بالضبط. بدأ البحث الذي أدى إلى ما نعرفه الآن باسم الإنترنت في الستينيات.
+
+من الذي أنشأ الإنترنت؟
+
+مرة أخرى ، من الصعب تحديد من أنشأها بالضبط. تم إجراء البحث الأولي من قبل وكالة مشاريع الأبحاث المتقدمة في أمريكا ، بتمويل من الحكومة الأمريكية.
+
+هل أصبح الإنترنت شائعًا بسرعة؟
+
+استغرق الأمر سنوات عديدة حتى أصبحت الإنترنت مشهورة في جميع أنحاء العالم. لم يكن الإنترنت جزءًا من حياتنا اليومية إلا منذ منتصف التسعينيات.
+
+كيف تتصل بالإنترنت؟
+
+للاتصال ، تحتاج إلى جهاز كمبيوتر وبرنامج الاتصال الصحيح ومودم متصل بخط الهاتف. تحتاج أيضًا إلى حساب مع مزود خدمة الإنترنت (ISP) ، والذي يعمل كبوابة بين جهاز الكمبيوتر الخاص بك وبقية الشبكة.
+
+ما مدى سرعة اتصالات الإنترنت اليوم؟
+
+اليوم ، تقدم ISPS اتصالاً واسع النطاق وعالي السرعة. أكثر الأنواع شيوعًا هي الكبلات - التي تقدمها شركات تلفزيون الكابل المحلية - و ADSL (خط المشترك الرقمي غير المتماثل) ، الذي يعمل من خلال خطوط الهاتف. كلاهما أسرع من اتصال الهاتف الهاتفي التقليدي. كما يتم توفير الوصول إلى النطاق العريض من قبل بعض شبكات الكهرباء. توفر هذه التقنية المنافسة ، المعروفة باسم الإنترنت عبر خط الطاقة ، وصولاً منخفض التكلفة عبر قابس الطاقة ، ولكنها لا تزال قيد التطوير.
+
+ما هي مدة وجود النطاق العريض؟ منذ أواخر التسعينيات.
+
+كم تكلفة الوصول إلى النطاق العريض؟
+
+هذا يعتمد على الشركة التي تختارها. في الوقت الحاضر ، تقدم بعض الشركات حتى النطاق العريض المجاني.
+
+لماذا تحتاج مودم؟
+
+يقوم المودم (المغير / مزيل التشكيل) بتحويل الإشارات الرقمية إلى إشارات تناظرية بحيث يمكن نقل البيانات عبر الهاتف أو شبكة الكابل.
+
+ماذا يعني TCP / IP؟
+
+تُعرف اللغة المستخدمة لنقل البيانات على الإنترنت باسم TCP / IP (بروتوكول التحكم في الإرسال / بروتوكول الإنترنت). هذا مثل نظام تشغيل الإنترنت. يتم تحديد كل جهاز كمبيوتر متصل بالشبكة بواسطة عنوان IP فريد.
+
+هل توجد طرق أخرى للوصول إلى الإنترنت؟
+
+تشمل الطرق الأخرى للوصول إلى الإنترنت شبكة Wi-Fi والأقمار الصناعية والهواتف المحمولة وأجهزة التلفزيون المجهزة بمودم. تسمح لك أجهزة الكمبيوتر المحمولة أو المساعد الرقمي الشخصي التي تدعم Wi-Fi بالاتصال بالشبكة إذا كنت بالقرب من نقطة وصول لاسلكية ، في مواقع تسمى نقاط الاتصال (على سبيل المثال ، مقهى Wi-Fi أو حديقة أو حرم جامعي). تُستخدم الخدمات الساتلية في الأماكن التي لا يتوفر فيها الوصول الأرضي (على سبيل المثال ، على السفن في البحر). توفر الهواتف المحمولة المتطورة إمكانية الوصول عبر شبكة الهاتف.
