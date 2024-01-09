@@ -5,7 +5,7 @@ const { localDB } = require('./subjects');
 const bodyParser = require('body-parser');
 // replace the value below with the Telegram token you receive from @BotFather
 
-// const express = require('express');
+const express = require('express');
 
 
 const botToken = '6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM';
@@ -13,8 +13,8 @@ const bot = new TelegramBot(botToken,{polling:true});
 
 // bot.setWebHook("https://tiny-rose-pig-hose.cyclic.app/webhook"+botToken)
 
-// const app = express();
-// app.use(bodyParser.json());
+const app = express();
+app.use(bodyParser.json());
 
 
 // app.post('/webhook'+botToken, (req, res) => {
@@ -23,11 +23,15 @@ const bot = new TelegramBot(botToken,{polling:true});
 //     res.sendStatus(200);
 // });
 
-// const port = process.env.PORT || 3000
+app.get("/",(req,res)=>{
+  res.sendFile(__dirname + "/index.html")
+})
 
-// app.listen(port, () => {
-//   console.log('Server is running ' + port);
-// });
+const port = process.env.PORT || 3000
+
+app.listen(port, () => {
+  console.log('Server is running ' + port);
+});
 
 bot.on("polling_error", ()=>{});
 const current = {
