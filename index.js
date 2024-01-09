@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 // });
 
 app.get("/",(req,res)=>{
-  res.sendFile("./index.html")
+  res.send("cs bot")
 })
 
 const port = process.env.PORT || 3000
