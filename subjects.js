@@ -267,8 +267,10 @@ const localDB = {
           text: "Communication Skills",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: false,
-            folder: "Communication Skills",
+            data:{
+              isWorkable: false,
+               folder: "ComSkil",
+            }
           }),
         },
       ],
@@ -277,8 +279,10 @@ const localDB = {
           text: "Introduction to Databases",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: true,
-            folder: "DB",
+            data:{
+              isWorkable: true,
+              folder: "DB", 
+            }
           }),
         },
       ],
@@ -287,8 +291,10 @@ const localDB = {
           text: "Operating Systems",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: true,
-            folder: "OS",
+            data:{
+              isWorkable: true,
+              folder: "OS",
+            }
           }),
         },
       ],
@@ -297,8 +303,10 @@ const localDB = {
           text: "English Language IV",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: false,
-            folder: "English",
+            data:{
+              isWorkable: false,
+              folder: "English",
+            }
           }),
         },
       ],
@@ -307,8 +315,10 @@ const localDB = {
           text: "Web Systems",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: true,
-            folder: "Web",
+            data:{
+              isWorkable: true,
+              folder: "Web",
+            }
           }),
         },
       ],
@@ -317,8 +327,10 @@ const localDB = {
           text: " Thinking and Learning Skills",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: false,
-            folder: "Thinking",
+            data:{
+             isWorkable: false,
+             folder: "Thinking",
+            }
           }),
         },
       ],
@@ -327,8 +339,10 @@ const localDB = {
           text: "Analysis of Algorithms & Thinking",
           callback_data: JSON.stringify({
             type: "subj",
-            isWorkable: true,
-            folder: "Alg",
+            data:{
+              isWorkable: true,
+              folder: "Alg",
+            }
           }),
         },
       ],
