@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 // });
 
 app.get("/",(req,res)=>{
-  res.sendFile("index.html")
+  path.join(__dirname, '/index.html')
 })
 
 const port = process.env.PORT || 3000
