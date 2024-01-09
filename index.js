@@ -29,7 +29,7 @@ const bot = new TelegramBot(botToken,{polling:true});
 //   console.log('Server is running ' + port);
 // });
 
-bot.on("polling_error", console.log);
+bot.on("polling_error", ()=>{});
 const current = {
   level:0,
   term:0,
