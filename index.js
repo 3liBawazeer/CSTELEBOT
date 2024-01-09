@@ -29,7 +29,7 @@ const bot = new TelegramBot(botToken,{polling:true});
 //   console.log('Server is running ' + port);
 // });
 
-// bot.on("polling_error", console.log);
+bot.on("polling_error", console.log);
 const current = {
   level:0,
   term:0,
@@ -99,11 +99,13 @@ const sendChannels = async (type = 0 || 1,chatId,data) => {
     const red = JSON.parse(fs.readFileSync(folderPath));
     if (red && red?.length != 0) {
       red.map((ele)=>{
-        bot.sendMessage(chatId,`
-         ${ele?.desc}
+        bot.sendMessage(chatId,`${ele?.desc}
+
          إسم القناة : ${ele?.channelName} .
-         الرابط : ${ele?.link}.
-        `)
+         الرابط : [إضغط هنا](${ele?.link}).
+        `,{
+          parse_mode:"Markdown"
+        })
       })
     }else{
       bot.sendMessage(chatId,"🫢 ops !!");
