@@ -168,6 +168,8 @@ bot.on("callback_query",(Q)=>{
               inline_keyboard:subjects,
             }
           });
+        } else {
+          console.log(query.data.term,"//////////////////////////");
         }
         break;
       }
