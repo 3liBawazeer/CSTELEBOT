@@ -178,7 +178,10 @@ bot.on("callback_query",(Q)=>{
         // ## Current subject ##
         current.subj = query.data;
         if (query.data?.isWorkable) {
-          bot.editMessageText("/                  ^_^                    \\",
+          let subjects = localDB["level" + current.level ]["term" + (current.term)];
+          const nameOfSubject = subjects.find((ele)=> ele[0].callback_data ? JSON.parse(ele[0].callback_data)?.folder == query.data.folder : false )
+
+          bot.editMessageText(nameOfSubject?`/                 ${nameOfSubject[0]?.text}                  \\`:"/                  ^_^                    \\",
         {
           chat_id:chatId,
           message_id:mesgId,
