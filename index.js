@@ -57,7 +57,7 @@ bot.on('message', (msg) => {
     return
   }
   if (text == "قايمه" || text == "قائمه" || text == "قائمة" ||text == "قايمة" || text == "/start"  ) {
-    bot.sendMessage(chatId,"       .       حدد المستوى الدراسي       ^_^      ",
+    bot.sendMessage(chatId,"      👨‍🎓      حدد المستوى الدراسي     👨‍🎓     ",
     {
       reply_markup:{
         inline_keyboard:[
@@ -126,6 +126,68 @@ const sendChannels = async (type = 0 || 1,chatId,data) => {
 
 }
 
+const backHandler = (chatId,To,mesgId) => { 
+  switch (To) {
+
+    case "home":
+      bot.editMessageText("      👨‍🎓      حدد المستوى الدراسي     👨‍🎓     ",
+      {
+        chat_id:chatId,
+        message_id:mesgId,
+        reply_markup:{
+          inline_keyboard:[
+            [{text:"مستوى اول", callback_data:JSON.stringify({type:"level",data:1,})}],
+            [{text:"مستوى ثاني",callback_data:JSON.stringify({type:"level",data:2,})}],
+            // [{text:"مستوى ثالث",callback_data:JSON.stringify({type:"level",data:3,})}],
+            // [{text:"مستوى رابع",callback_data:JSON.stringify({type:"level",data:4,})}],
+          ]
+        }
+      });
+      break;
+
+    case "term":
+      bot.editMessageText("👇 حدد الترم         ُ",
+      {
+        chat_id:chatId,
+        message_id:mesgId,
+        reply_markup:{
+          inline_keyboard:[
+            [{text:"الترم الأول",callback_data:JSON.stringify({type:"term",data:{term:1,level:current.level},})}],
+            [{text:"الترم الثاني",callback_data:JSON.stringify({type:"term",data:{term:2,level:current.level},})}],
+            [
+              {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+              {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+            ]
+          ]
+        }
+      });
+      break;
+    
+    case "subj":
+      let subjects = localDB["level" + current?.level ]["term" + (current?.term)];
+      bot.editMessageText("📖    حدد المادة    📖" ,
+      {
+        chat_id:chatId,
+        message_id:mesgId,
+        reply_markup:{
+          inline_keyboard:subjects?.push(
+            [
+              {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
+              {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+            ]
+          ),
+        }
+      });
+      break;
+
+    case "0":
+      
+      break;
+    default:
+      break;
+  }
+}
+
 
 bot.on("callback_query",(Q)=>{
   const query = JSON.parse(Q.data) , mesgId = Q.message.message_id;
@@ -144,6 +206,10 @@ bot.on("callback_query",(Q)=>{
               inline_keyboard:[
                 [{text:"الترم الأول",callback_data:JSON.stringify({type:"term",data:{term:1,level:query.data},})}],
                 [{text:"الترم الثاني",callback_data:JSON.stringify({type:"term",data:{term:2,level:query.data},})}],
+                [
+                  {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+                  {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+                ]
               ]
             }
           });
@@ -165,7 +231,12 @@ bot.on("callback_query",(Q)=>{
             chat_id:chatId,
             message_id:mesgId,
             reply_markup:{
-              inline_keyboard:subjects,
+              inline_keyboard:subjects?.push(
+                [
+                  {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
+                  {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+                ]
+              ),
             }
           });
         } else {
@@ -181,10 +252,10 @@ bot.on("callback_query",(Q)=>{
         current.subj = query.data;
         if (query.data?.isWorkable) {
           let subjects = localDB["level" + current.level ]["term" + (current.term)];
-          const nameOfSubject = subjects.find((ele)=> ele[0].callback_data != "" ? JSON.parse(ele[0].callback_data)?.data?.folder == query.data.folder : false )
+          const nameOfSubject = subjects.find((ele)=> ele[0].callback_data != "" ? JSON.parse(ele[0].callback_data)?.data?.folder == query.data.folder : false )[0]?.text
 
 
-          bot.editMessageText(nameOfSubject?`/                 ${nameOfSubject[0]?.text}                  \\`:"/                  ^_^                    \\",
+          bot.editMessageText(nameOfSubject?`/      ${nameOfSubject[0]?.text}         \\`:"/                  ^_^                    \\",
         {
           chat_id:chatId,
           message_id:mesgId,
@@ -193,7 +264,11 @@ bot.on("callback_query",(Q)=>{
             [{text:"ملازم النظري 📚",callback_data:JSON.stringify({type:"books",lv:current.level,trm:current.term,fol:query.data.folder})}],
             [{text:"ملازم العملي 📚",callback_data:JSON.stringify({type:"WorkableBooks",lv:current.level,trm:current.term,fol:query.data.folder})}],
             [{text:"نماذج إختبارات 📃",callback_data:JSON.stringify({type:"exams",lv:current.level,trm:current.term,fol:query.data.folder})}],
-            [{text:" قنوات يوتيوب ▶️",callback_data:JSON.stringify({type:"youtubechannels",lv:current.level,trm:current.term,fol:query.data.folder})}]
+            [{text:" قنوات يوتيوب ▶️",callback_data:JSON.stringify({type:"youtubechannels",lv:current.level,trm:current.term,fol:query.data.folder})}],
+            [
+              {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"subj"}})},
+              {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+            ]
           ],
           }
         });
@@ -206,7 +281,11 @@ bot.on("callback_query",(Q)=>{
             inline_keyboard : [
             [{text:"الملازم 📚",callback_data:JSON.stringify({type:"books",lv:current.level,trm:current.term,fol:query.data.folder})}],
             [{text:"نماذج إختبارات 📃",callback_data:JSON.stringify({type:"exams",lv:current.level,trm:current.term,fol:query.data.folder})}],
-            [{text:" قنوات يوتيوب ▶️",callback_data:JSON.stringify({type:"youtubechannels",lv:current.level,trm:current.term,fol:query.data.folder})}]
+            [{text:" قنوات يوتيوب ▶️",callback_data:JSON.stringify({type:"youtubechannels",lv:current.level,trm:current.term,fol:query.data.folder})}],
+            [
+              {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"subj"}})},
+              {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+            ]
           ],
           }
         });
@@ -231,6 +310,9 @@ bot.on("callback_query",(Q)=>{
       case "youtubechannels":{
         sendChannels(0,chatId,query)
         break;
+      }
+      case "back":{
+        backHandler(chatId,query?.data?.backTo,mesgId)
       }
 
     default:

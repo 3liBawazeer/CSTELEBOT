@@ -1,35 +1,41 @@
-/**
- * This example demonstrates setting up a webook, and receiving
- * updates in your express app
- */
-/* eslint-disable no-console */
+// /**
+//  * This example demonstrates setting up a webook, and receiving
+//  * updates in your express app
+//  */
+// /* eslint-disable no-console */
 
-const TOKEN = "6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM";
-const url = "https://tiny-rose-pig-hose.cyclic.app";
-const port = process.env.PORT || 3000 ;
+const { localDB } = require("./subjects");
 
-const TelegramBot = require('node-telegram-bot-api');
-const express = require('express');
+// const TOKEN = "6902681746:AAFELtFHrXmJZ-ywamUznEp4Y1fSC-N3qwM";
+// const url = "https://tiny-rose-pig-hose.cyclic.app";
+// const port = process.env.PORT || 3000 ;
 
-// No need to pass any parameters as we will handle the updates with Express
-const bot = new TelegramBot(TOKEN);
+// const TelegramBot = require('node-telegram-bot-api');
+// const express = require('express');
 
-// This informs the Telegram servers of the new webhook.
+// // No need to pass any parameters as we will handle the updates with Express
+// const bot = new TelegramBot(TOKEN);
+
+// // This informs the Telegram servers of the new webhook.
 
 
-const app = express();
+// const app = express();
 
-// parse the updates to JSON
-app.use(express.json());
+// // parse the updates to JSON
+// app.use(express.json());
 
-// We are receiving updates at the route below!
-app.post(`/webhook`+TOKEN, (req, res) => {
-  bot.processUpdate(req.body);
-  res.sendStatus(200);
-});
+// // We are receiving updates at the route below!
+// app.post(`/webhook`+TOKEN, (req, res) => {
+//   bot.processUpdate(req.body);
+//   res.sendStatus(200);
+// });
 
-// Start Express Server
-app.listen(port, () => {
-  console.log(`Express server is listening on ${port}`);
-});
+// // Start Express Server
+// app.listen(port, () => {
+//   console.log(`Express server is listening on ${port}`);
+// });
 
+let subjects = localDB.level1.term1;
+const nameOfSubject = subjects.find((ele)=> ele[0].callback_data != "" ? JSON.parse(ele[0].callback_data)?.data?.folder == "comp_skill" : false )[0]?.text
+
+console.log(nameOfSubject);
