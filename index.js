@@ -162,7 +162,6 @@ const backHandler = (chatId,To,mesgId) => {
         }
       });
       break;
-    
     case "subj":
       let subjects = localDB["level" + current?.level ]["term" + (current?.term)];
       bot.editMessageText("📖    حدد المادة    📖" ,
@@ -170,7 +169,7 @@ const backHandler = (chatId,To,mesgId) => {
         chat_id:chatId,
         message_id:mesgId,
         reply_markup:{
-          inline_keyboard:subjects?.push(
+          inline_keyboard:subjects?.concat(
             [
               {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
               {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
@@ -181,7 +180,7 @@ const backHandler = (chatId,To,mesgId) => {
       break;
 
     case "0":
-      
+
       break;
     default:
       break;
@@ -198,7 +197,7 @@ bot.on("callback_query",(Q)=>{
         // ## Current Level ##
         if (query.data > 0) {
           current.level = query.data;
-          bot.editMessageText(" حدد الترم         ^_^       ",
+          bot.editMessageText("👇 حدد الترم         ُ",
           {
             chat_id:chatId,
             message_id:mesgId,
@@ -226,12 +225,12 @@ bot.on("callback_query",(Q)=>{
 
         if (query.data.term > 0) {
 
-          bot.editMessageText(" إختر المادة       ^_^       " ,
+          bot.editMessageText("📖    حدد المادة    📖" ,
           {
             chat_id:chatId,
             message_id:mesgId,
             reply_markup:{
-              inline_keyboard:subjects?.push(
+              inline_keyboard:subjects?.concat(
                 [
                   {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
                   {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
