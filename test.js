@@ -36,6 +36,8 @@ const { localDB } = require("./subjects");
 // });
 
 let subjects = localDB.level1.term1;
-const nameOfSubject = subjects.find((ele)=> ele[0].callback_data != "" ? JSON.parse(ele[0].callback_data)?.data?.folder == "comp_skill" : false )[0]?.text
-
-console.log(nameOfSubject);
+subjects = [...subjects, [
+  {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
+  {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+]]
+console.log(subjects);

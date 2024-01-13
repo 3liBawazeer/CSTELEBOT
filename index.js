@@ -230,12 +230,12 @@ bot.on("callback_query",(Q)=>{
             chat_id:chatId,
             message_id:mesgId,
             reply_markup:{
-              inline_keyboard:subjects?.concat(
-                [
-                  {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
-                  {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
-                ]
-              ),
+              inline_keyboard:[
+                ...subjects, 
+               [
+                {text:"عودة 🔙",callback_data:JSON.stringify({type:"back",data:{backTo:"term"}})},
+                {text:"القائمة الرئيسية 🔝",callback_data:JSON.stringify({type:"back",data:{backTo:"home"}})},
+              ]],
             }
           });
         } else {
