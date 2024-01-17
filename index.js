@@ -44,7 +44,6 @@ const current = {
   },
 };
 
-
 bot.on('message', (msg) => {
 
   const chatId = msg?.chat?.id , mesgId = msg?.message_id , text = msg?.text;
@@ -74,8 +73,6 @@ bot.on('message', (msg) => {
   bot.sendMessage(chatId,"يكفي لعب 😒 ")
 
 });
-
-
 
 const sendbooks = (type = 0 || 1,chatId,data) => { 
     const folderPath = __dirname + "/computer scince/level_"+ data?.lv + "/term_" + data?.trm + "/" + data.fol + "/" + type;
@@ -130,7 +127,7 @@ const backHandler = (chatId,To,mesgId) => {
   switch (To) {
 
     case "home":
-      bot.editMessageText("      👨‍🎓      حدد المستوى الدراسي     👨‍🎓     ",
+      bot.editMessageText(" 👨‍🎓      حدد المستوى الدراسي     👨‍🎓 ",
       {
         chat_id:chatId,
         message_id:mesgId,
@@ -146,7 +143,7 @@ const backHandler = (chatId,To,mesgId) => {
       break;
 
     case "term":
-      bot.editMessageText("👇 حدد الترم         ُ",
+      bot.editMessageText("👇      حدد الترم       👇",
       {
         chat_id:chatId,
         message_id:mesgId,
@@ -179,14 +176,13 @@ const backHandler = (chatId,To,mesgId) => {
       });
       break;
 
-    case "0":
+    // case "0":
 
-      break;
+    //   break;
     default:
       break;
   }
 }
-
 
 bot.on("callback_query",(Q)=>{
   const query = JSON.parse(Q.data) , mesgId = Q.message.message_id;
@@ -197,7 +193,7 @@ bot.on("callback_query",(Q)=>{
         // ## Current Level ##
         if (query.data > 0) {
           current.level = query.data;
-          bot.editMessageText("👇 حدد الترم         ُ",
+          bot.editMessageText("👇      حدد الترم       👇",
           {
             chat_id:chatId,
             message_id:mesgId,
@@ -225,7 +221,7 @@ bot.on("callback_query",(Q)=>{
 
         if (query.data.term > 0) {
 
-          bot.editMessageText("📖    حدد المادة    📖" ,
+          bot.editMessageText("📖      حدد المادة      📖" ,
           {
             chat_id:chatId,
             message_id:mesgId,
